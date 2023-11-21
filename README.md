@@ -1,5 +1,5 @@
 # qPhysim
-Simple Qt physics simulator. Rendering is done with QPainter. Box2d library is used for physics.
+Simple Qt6 physics simulator. Rendering is done with QPainter. Box2d library is used for physics.
 
 # Build
 
