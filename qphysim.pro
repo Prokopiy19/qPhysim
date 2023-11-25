@@ -9,6 +9,6 @@ SOURCES = main.cpp \
           simulation.cpp \
           window.cpp
 
-win32: LIBS += -lbox2d
+LIBS += -lbox2d
 
 CONFIG += c++20

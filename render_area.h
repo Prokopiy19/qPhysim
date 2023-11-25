@@ -35,7 +35,13 @@ protected:
     void mousePressEvent(QMouseEvent *event) override;
 
 private:
-    void draw_edge(QPainter& painter, const b2EdgeShape& edge);
+    void draw_body(QPainter& painter, const b2Body *body);
+    void draw_shape(QPainter& painter, const b2Shape *shape);
+    void draw_polygon(QPainter& painter, const b2PolygonShape *polygon);
+    void draw_circle(QPainter& painter, const b2CircleShape *circle);
+    void draw_chain(QPainter& painter, const b2ChainShape *chain);
+    void draw_edge(QPainter& painter, const b2EdgeShape *edge);
+    void draw_body_count(QPainter& painter);
 
     float screen_x(float x) const {
         return scale_x(x - view.x);
